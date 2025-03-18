@@ -1,0 +1,35 @@
+A utilização do operador ternário está atrelada entre a facilidade de leitura do código
+e a fluídez do mesmo.
+
+Um bloco de código if else por exemplo, utiliza de uma estrutura que muitas vezes utiliza minima-
+mente 4 linhas, isso supendo que seja uma condicional bem curta.
+Utilizarei um exemplo simples a seguir.
+
+public class MyClass{
+    public static void main(String[]args){
+        int numero=10;
+        if (numero==10){
+            System.out.println("Verdadeiro!");
+         }else{
+            System.out.println("Falso!");
+        }
+    }
+}
+
+Observe que até mesmo um código simples como esse utilza 4 linhas de código para funcionar,
+mas isso não quer dizer que é a única maneira de utilizarmos os condicionais if else,
+podemos também abreviar todo esse bloco if else, deixando nosso código limpo e mais efeciente.
+É aí que entram os operadores Ternários. Utilizando a mesma lógica do bloco if else acima,
+iremos construir nossa estrutura ternária a seuir:
+
+public class MyClass {
+    public static void main(String[] args) {
+        int numero = 10;
+        String res = (numero == 10) ? "Verdadeiro!" : "Falso!";
+        System.out.println(res);
+    }
+}
+
+
+Podemos observar que somente com o uso dos operadores ternários, consguimos diminuir nosso 
+bloco condicional de quatro, para duas linhas apenas. Além de facilitar e muito a leitura.
