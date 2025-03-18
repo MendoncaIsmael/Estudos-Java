@@ -2,7 +2,7 @@ A utilização do operador ternário está atrelada entre a facilidade de leitur
 e a fluídez do mesmo.
 
 Um bloco de código if else por exemplo, utiliza de uma estrutura que muitas vezes utiliza minima-
-mente 4 linhas, isso supendo que seja uma condicional bem curta.
+mente 4 linhas, isso supondo que seja uma condicional bem curta.
 Utilizarei um exemplo simples a seguir.
 
 public class MyClass{
