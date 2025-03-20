@@ -1,0 +1,34 @@
+Quando nos referimos a Escopo em Java, precisamos ter como principal noção quais métodos,
+são acessíveis para cada escopo(bloco de código) dentro de nosso código.
+Na linguagem Java, não existe o termo de métodos(variáveis) globais como aconte em outras
+linguagens de programação.
+Aqui, por outro lado temos que ter uma atenção maior para com o escopo,
+pois uma variável de classe pode ser acessada pelo código inteiro, ja uma variável local de método
+pode ser acessada somente dentro de seu escopo de declaração.
+Vejamos o Exemplo a seguir:
+
+public class Conta {
+    //variável de classe Conta 
+    double saldo=10.0;    // saldo pode ser acessado em qualquer parte do cdg.
+
+    public void sacar(Double valor){
+        //variável local de método 
+        double novoSaldo = saldo - valor; //pode ser acessada somente pelo método sacar()
+    }
+
+public void imprimirSaldo(){
+    //disponível em toda classe
+    System.out.println(saldo);
+    //somente o método sacar conhece essa variável
+    System.out.println(novoSaldo);
+}}
+
+De forma bem simplória, temos que as variáveis de classe(declaradas com static) podem ser 
+acessadas de qualquer escopo dentro do código, 
+por outro lado temos as variáveis locais que podem ser acessadas somente 
+no escopo de seu método declarado(Não existe fora de seu método).
+Porém, há uma diferença essencial: variáveis de classe ainda estão "encapsuladas" 
+dentro da classe. 
+Elas respeitam os níveis de acesso (como private, protected, public) 
+definidos, enquanto variáveis globais tradicionais em outras linguagens geralmente 
+ignoram essa restrição.
