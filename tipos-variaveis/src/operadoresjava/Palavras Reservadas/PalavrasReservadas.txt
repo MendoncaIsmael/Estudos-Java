@@ -1,0 +1,232 @@
+     Lista de Palavras reservadas e sua utilização em Java. 
+
+
+1. Controle de fluxo
+Muito frequente em quase todos os programas:
+
+if: Executa um bloco condicionalmente.
+
+java
+if (x > 10) System.out.println("Maior que 10");
+else: Define um bloco alternativo ao if.
+
+java
+if (x > 10) {
+    System.out.println("Maior");
+} else {
+    System.out.println("Menor");
+}
+for: Cria um laço de repetição.
+
+java
+for (int i = 0; i < 10; i++) {
+    System.out.println(i);
+}
+while: Cria um laço baseado em uma condição.
+
+java
+while (x > 0) {
+    x--;
+}
+do: Executa um bloco antes de verificar a condição.
+
+java
+do {
+    System.out.println("Olá");
+} while (false);
+switch: Escolhe entre vários blocos de código.
+
+java
+switch (x) {
+    case 1: System.out.println("Um"); break;
+    default: System.out.println("Outro");
+}
+case: Define um caminho no switch.
+
+java
+case 1: System.out.println("Um");
+default: Bloco padrão do switch.
+
+java
+default: System.out.println("Outro");
+break: Interrompe um laço ou switch.
+
+java
+for (int i = 0; i < 10; i++) {
+    if (i == 5) break;
+}
+continue: Interrompe a iteração atual de um laço.
+
+java
+for (int i = 0; i < 10; i++) {
+    if (i % 2 == 0) continue;
+    System.out.println(i);
+}
+2. Tipos de dados primitivos
+Essenciais para armazenar valores no programa:
+
+int: Tipo de dado para inteiros.
+
+java
+int idade = 30;
+boolean: Tipo de dado para valores true ou false.
+
+java
+boolean ativo = true;
+double: Tipo de dado para números com precisão dupla.
+
+java
+double preco = 19.99;
+char: Tipo de dado para caracteres.
+
+java
+char letra = 'A';
+float: Tipo de dado para números de ponto flutuante.
+
+java
+float altura = 1.75f;
+long: Tipo de dado para inteiros longos.
+
+java
+long populacao = 1000000000L;
+short: Tipo de dado para inteiros curtos.
+
+java
+short numero = 100;
+byte: Tipo de dado de 8 bits.
+
+java
+byte numero = 100;
+3. Classes e objetos
+Usados para criar e estruturar programas orientados a objetos:
+
+class: Declara uma classe.
+
+java
+class Pessoa {}
+new: Cria novas instâncias de objetos.
+
+java
+Pessoa p = new Pessoa();
+extends: Define herança entre classes.
+
+java
+class Animal {}
+class Cachorro extends Animal {}
+implements: Declara que uma classe implementa uma interface.
+
+java
+interface Movel {}
+class Carro implements Movel {}
+interface: Declara uma interface.
+
+java
+interface Movel {}
+this: Referência à instância atual.
+
+java
+this.nome = nome;
+super: Referência à classe mãe.
+
+java
+super.metodo();
+4. Controle de acesso
+Define os níveis de visibilidade dos membros:
+
+public: Acesso público.
+
+java
+public String nome;
+protected: Acesso para subclasses e classes no mesmo pacote.
+
+java
+protected String nome;
+private: Acesso restrito à classe.
+
+java
+private int idade;
+5. Manipulação de exceções
+Importantes para tratar erros no programa:
+
+try: Bloco que tenta executar código que pode lançar exceções.
+
+java
+try {
+    int x = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Erro!");
+}
+catch: Captura exceções.
+
+java
+catch (ArithmeticException e) {
+    System.out.println("Erro!");
+}
+finally: Bloco que sempre é executado após try e/ou catch.
+
+java
+finally {
+    System.out.println("Fim.");
+}
+throw: Lança uma exceção.
+
+java
+throw new Exception("Erro!");
+throws: Declara exceções que um método pode lançar.
+
+java
+void metodo() throws Exception {}
+6. Outros
+Recursos menos utilizados:
+
+static: Declara métodos ou variáveis estáticas.
+
+java
+static int contador;
+final: Define constantes, métodos ou classes imutáveis.
+
+java
+final int MAX = 100;
+abstract: Declara métodos ou classes abstratas.
+
+java
+abstract class Forma {
+    abstract void desenhar();
+}
+synchronized: Garante sincronização em threads.
+
+java
+synchronized (this) {}
+volatile: Garante que variáveis sejam lidas diretamente da memória principal.
+
+java
+volatile int contador;
+native: Declara métodos implementados em código nativo.
+
+java
+native void metodoNativo();
+strictfp: Garante precisão em cálculos de ponto flutuante.
+
+java
+strictfp class Exemplo {}
+transient: Evita que um campo seja serializado.
+
+java
+transient int senha;
+7. Literais
+Representam valores fixos:
+
+true, false: Valores booleanos.
+
+java
+boolean ativo = true;
+null: Valor nulo.
+
+java
+String nome = null;
+8. Palavras reservadas não utilizadas
+Reservadas, mas não utilizadas:
+
+goto
+
+const
