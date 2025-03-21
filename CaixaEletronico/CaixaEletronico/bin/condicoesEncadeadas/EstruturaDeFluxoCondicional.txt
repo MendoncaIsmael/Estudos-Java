@@ -1,0 +1,56 @@
+No arquivo @ResultadoEscolar.java, temos uma ilustração de como podeos trabalhar com 
+condicionais, havendo duas estruturas condicionais, a simples e a composta.
+Uma condicional simples, normalmente usa somente um if em sua construção 
+precisa somente de uma condição para ser satisfeita e entregar seu retorno.
+
+Ja as estruturas condicionais compostas, tem um pouco mais de complexidade e precisam
+de algumas regras para funcionar.
+A primeira regra é que sempre o último elemento da condição, termina com else,
+caso haja mais de duas condições, teremos que utilizar else if(elif em outras linguagens)
+e por fim finalizamos com o else.
+
+Agora iremos ilustrar três exemplos:
+
+Condicional Simples: Possui somente uma condição a ser satisfeita.
+
+int a = 10
+int b = 2
+      
+      if(a>b)
+      System.out.println("Verdadeiro")
+
+Condicional Composta < 2 condicionais : Possui até duas condicionais.
+int a = 10
+int b = 2
+      
+      if(a>b)
+      System.out.println("Verdadeiro");
+      else
+      System.out.println("Falso");
+
+Condicional Composta com mais de duas condições.
+
+int a = 10
+int b = 2
+      
+      if(a>b)
+      System.out.println("a é maior que b");
+      else if(b>a)
+      System.out.println("O valor de b é maior que o valor de a");
+      else
+      System.out.println("a não pe maior que b");
+
+
+Ainda temos mais uma condição especial que quando dentro de um if ou else temos mais 
+de um valor, devemos construir um bloco para esta condição.
+
+int num1 = 10
+int num2 = 2
+      
+      if(num1>num2){
+      System.out.println(num1+ "é maior que" +num2);
+      }else
+      System.out.println("O segundo valor é maior que o primeiro")
+
+
+   
