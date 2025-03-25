@@ -1,0 +1,51 @@
+Podemos também, utilizar o Switch Case de modos distintos ao padronizado.
+Poderiamos imaginar uma situação onde precisamos criar um código que mostre o plano de 
+Operadora de um cliente qualquer; Dentro dos possíveis pacotes de planos, temos um básico,
+um mediano e um completo.
+Ao invés de trabalharmos esse código com If e Else, usaremos o Switch Case para deixar
+o código mais limpo e legível, além de mais rápido para codar.
+Criaremos então o case, onde iniciaremos do maior pacote o pacote Completo, indo até o 
+pacote básico.
+A diferença da utilização de Switch Case nesse código, é que queremos que o Switch Case 
+imprima todos os cases abaixo do pacote selecionado; Explicando de forma mais didática,
+teriamos os pacotes: 
+
+- Ouro que entrega 10 GB de internet, ligação ilimitada e spotify.
+- Prata que entrega 10 GB de internet e ligação ilimitada.
+- Bronze que entrega 10 GB de internet.
+
+1- Caso o pacote do cliente seja nível Ouro, o nosso Swicth Case deverá imprimir o Case de :
+Ouro,Prata e Bronze.
+
+2- Caso o pacote do cliente seja nível Prata, o nosso switch Case deverá imprimir o Case de :
+Prata e Bronze.
+
+3- Caso o pacote do cliente seja nível Bronze, o nosso Switch Case deverá imprimir somente o
+case de : Bronze.
+
+Em código ficaria da seguinte maneira:
+
+        
+Switch(pacote){
+    case "Ouro":{
+        System.out.println("Spotify");
+    }
+    case "Prata":{
+        System.out.println("Ligações ilimitadas");
+    }
+    case "Bronze":{
+        System.out.println("10 GB de Internet");
+    }
+}
+
+Seguindo a lógica de nosso código, caso o pacote fosse Ouro, o sistema retornaria :
+Spotify
+Ligações ilimitadas
+10 GB de internet
+-----------------------------------------------------------------------------------
+Caso fosse Prata:
+Ligações ilimitadas
+10 GB de internet
+-----------------------------------------------------------------------------------
+Caso fosse Bronze:
+10 GB de internet
